@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace FallingSloth.JAT
+namespace BJGames.JAT
 {
     [CustomEditor(typeof(Face))]
     public class FaceEditor : Editor

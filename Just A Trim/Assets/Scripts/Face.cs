@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FallingSloth.JAT
+namespace BJGames.JAT
 {
     public class Face : MonoBehaviour
     {

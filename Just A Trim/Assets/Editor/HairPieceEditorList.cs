@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace FallingSloth.JAT
+namespace BJGames.JAT
 {
     public class CustomEditorList : ReorderableList
     {

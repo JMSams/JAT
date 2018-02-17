@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using UnityEditor;
-
-namespace FallingSloth.JAT
+﻿namespace BJGames.JAT
 {
     public enum HairTypes
     {
