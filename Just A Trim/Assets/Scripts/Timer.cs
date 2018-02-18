@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace BJGames.JAT
 {
@@ -9,19 +10,19 @@ namespace BJGames.JAT
     {
         public string timerPrefix = "Time: ";
         public string timerSuffix = "";
-        public Text timerText;
+        public TextMeshProUGUI timerText;
 
-        float time
+        int time
         {
             get
             {
-                return Mathf.Round(Time.timeSinceLevelLoad * 10f) / 10f;
+                return Mathf.FloorToInt(Time.timeSinceLevelLoad);
             }
         }
         
         void Update()
         {
-            timerText.text = string.Format("{1}{0:0.0}{2}", time, timerPrefix, timerSuffix);
+            timerText.text = string.Format("{1}{0}{2}", time, timerPrefix, timerSuffix);
         }
     }
 }

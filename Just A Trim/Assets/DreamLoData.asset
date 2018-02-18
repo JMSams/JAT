@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce745beaf777b424c87a91ec39320cd2, type: 3}
+  m_Name: DreamLoData
+  m_EditorClassIdentifier: 
+  privateKey: oaF_R8b4I0u1YTfjtxwOcghgUeUA3pOkutkAS9UomAaA
+  publicKey: 5a8961da39992d09e4d8669a
