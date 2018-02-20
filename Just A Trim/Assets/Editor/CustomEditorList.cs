@@ -21,7 +21,7 @@ namespace BJGames.JAT
 
             this.onSelectCallback = (ReorderableList list) =>
             {
-                GameObject element = list.serializedProperty.GetArrayElementAtIndex(list.index).objectReferenceValue as GameObject;
+                Object element = list.serializedProperty.GetArrayElementAtIndex(list.index).objectReferenceValue as Object;
                 if (element)
                     EditorGUIUtility.PingObject(element);
             };

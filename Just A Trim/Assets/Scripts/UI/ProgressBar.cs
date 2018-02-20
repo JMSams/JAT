@@ -48,13 +48,6 @@ namespace BJGames.JAT
             UpdateProgress(0f);
         }
 
-#if DEBUG
-        void FixedUpdate()
-        {
-            UpdateProgress(value + Time.fixedDeltaTime);
-        }
-#endif
-
         void UpdateProgress(float newValue)
         {
             if (newValue <= minValue) value = minValue;
@@ -67,7 +60,7 @@ namespace BJGames.JAT
 
             if (showText && text != null)
             {
-                text.text = string.Format("{0}: {1:000}%", textPrefix, percentage * 100f);
+                text.text = string.Format("{0}: {1:0}%", textPrefix, percentage * 100f);
             }
         }
     }
