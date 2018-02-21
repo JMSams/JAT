@@ -1,0 +1,10 @@
+Design Notes
+
+- The design of the game should be built upon the original game
+- We could have many different faces and hair styles
+    - These could be randomized, or the player could be given an option to customize before play
+- Each piece of hair (beard, nose, etc) should be created as sprite animation
+    - Each frame should be 512×512 (pixels)
+    - The sprite animations should have a transparent background
+- Global leaderboards should be implemented
+    - Using google play services to make sure all usernames are unique
