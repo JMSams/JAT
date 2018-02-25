@@ -8,7 +8,7 @@ namespace BJGames.JAT
 {
     public class Timer : MonoBehaviour
     {
-        public string timerPrefix = "Time: ";
+        public string timerPrefix = "";
         public string timerSuffix = "";
         public TextMeshProUGUI timerText;
 
