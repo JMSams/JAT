@@ -52,12 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistent: 1
-  sounds:
-  - name: Jazz-Loop-01
-    audioClip: {fileID: 8300000, guid: 5867d79da89501b4e9dfe0c0fde0fb31, type: 3}
-    playOnAwake: 0
-    loop: 0
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
+  sounds: []
   globalVolume: 1
