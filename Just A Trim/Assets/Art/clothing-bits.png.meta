@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: afa8e51c2662ebf4e9edab47763224d0
-timeCreated: 1519520653
+guid: 0f074f59dc5d55e43b14e0334927a854
+timeCreated: 1519527985
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: beard-01
+    21300000: body
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -81,13 +81,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beard-01
+      name: body
       rect:
         serializedVersion: 2
-        x: 8
-        y: 10
-        width: 761
-        height: 611
+        x: 65
+        y: 52
+        width: 846
+        height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
