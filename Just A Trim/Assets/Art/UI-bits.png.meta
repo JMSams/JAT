@@ -7,6 +7,8 @@ TextureImporter:
     21300000: jamie-portrait
     21300002: brad-portrait
     21300004: circle-shape
+    21300006: triangle
+    21300008: holder
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -120,6 +122,34 @@ TextureImporter:
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: triangle
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 9
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: holder
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 8
+        width: 233
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
