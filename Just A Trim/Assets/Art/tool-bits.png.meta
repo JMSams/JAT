@@ -116,10 +116,10 @@ TextureImporter:
       name: razor
       rect:
         serializedVersion: 2
-        x: 169
-        y: 503
-        width: 305
-        height: 467
+        x: 209
+        y: 635
+        width: 170
+        height: 358
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,10 +130,10 @@ TextureImporter:
       name: scissors
       rect:
         serializedVersion: 2
-        x: 770
-        y: 591
-        width: 163
-        height: 424
+        x: 749
+        y: 561
+        width: 168
+        height: 433
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
