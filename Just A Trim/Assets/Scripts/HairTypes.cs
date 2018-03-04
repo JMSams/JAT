@@ -5,7 +5,7 @@
         HeadHair,
         Beard,
         Eyebrow,
-        EarRight,
+        Ear,
         Nose
     }
 }

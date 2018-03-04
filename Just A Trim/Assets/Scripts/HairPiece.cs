@@ -1,75 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace BJGames.JAT
 {
-    [RequireComponent(typeof(SpriteRenderer))]
-    public class HairPiece : MonoBehaviour
+    public class HairPiece : MonoBehaviour, IDropHandler
     {
         public HairTypes hairType;
 
-        public int framesPerSecond = 2;
-        float secondsPerFrame { get { return 1f / framesPerSecond; } }
-
-        public int currentFrame { get; protected set; }
-        int lastFrame { get { return frames.Count - 1; } }
-
-        public ProgressBar progressBar;
-
-        public float timeBeforeStart = 0f;
-        bool started = false;
-
-        new SpriteRenderer renderer;
-
-        float lastFrameTime = 0f;
-
-        public List<Sprite> frames;
-
-        public delegate void HairGrowthCompleteDelegate(HairTypes hairType);
-        public HairGrowthCompleteDelegate hairGrowthCompleteCallback;
-
-        void Start()
+        public void OnDrop(PointerEventData eventData)
         {
-            renderer = GetComponent<SpriteRenderer>();
+            Tool droppedTool = eventData.pointerDrag.GetComponent<Tool>();
 
-            progressBar.maxValue = lastFrame;
-        }
-
-        void Update()
-        {
-            if (!started
-                && Time.time >= timeBeforeStart)
+            if (droppedTool == null)
             {
-                StartGrowing();
+                Debug.Log("Dropped object was not a tool.");
+                return;
             }
 
-            if (started
-                && currentFrame < lastFrame
-                && Time.time - lastFrameTime >= secondsPerFrame)
+            if (hairType != droppedTool.hairTypeToCut)
             {
-                NextFrame();
+                Debug.Log(droppedTool.name + " not valid for this hair type (" + hairType + ").");
+                return;
             }
-        }
 
-        void StartGrowing()
-        {
-            progressBar.gameObject.SetActive(true);
-
-            lastFrameTime = Time.time;
-
-            started = true;
-        }
-
-        void NextFrame()
-        {
-            lastFrameTime = Time.time;
-            currentFrame++;
-
-            if (currentFrame >= lastFrame)
-            {
-                hairGrowthCompleteCallback(hairType);
-            }
+            Debug.Log("Dropped correct tool, cutting hair!");
         }
     }
 }

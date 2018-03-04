@@ -41,15 +41,21 @@ namespace FallingSloth.Audio
                 EditorGUI.PropertyField(pRect, element.FindPropertyRelative("audioClip"));
 
                 pRect = new Rect(rect.x + indent, rect.y + (lineHeightWithSpace * 3f), rect.width - indent, lineHeight);
-                EditorGUI.PropertyField(pRect, element.FindPropertyRelative("volume"));
+                EditorGUI.PropertyField(pRect, element.FindPropertyRelative("playOnAwake"));
 
                 pRect = new Rect(rect.x + indent, rect.y + (lineHeightWithSpace * 4f), rect.width - indent, lineHeight);
+                EditorGUI.PropertyField(pRect, element.FindPropertyRelative("loop"));
+
+                pRect = new Rect(rect.x + indent, rect.y + (lineHeightWithSpace * 5f), rect.width - indent, lineHeight);
+                EditorGUI.PropertyField(pRect, element.FindPropertyRelative("volume"));
+
+                pRect = new Rect(rect.x + indent, rect.y + (lineHeightWithSpace * 6f), rect.width - indent, lineHeight);
                 EditorGUI.PropertyField(pRect, element.FindPropertyRelative("pitch"));
             };
 
             list.elementHeightCallback = (int index) =>
             {
-                return lineHeightWithSpace * 5f;
+                return lineHeightWithSpace * 7f;
             };
 
             list.onAddCallback = (ReorderableList list) =>

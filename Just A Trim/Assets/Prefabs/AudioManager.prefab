@@ -52,5 +52,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistent: 1
-  sounds: []
+  sounds:
+  - name: Background Music
+    audioClip: {fileID: 8300000, guid: 5867d79da89501b4e9dfe0c0fde0fb31, type: 3}
+    playOnAwake: 1
+    loop: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   globalVolume: 1
