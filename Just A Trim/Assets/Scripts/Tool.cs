@@ -12,6 +12,9 @@ namespace BJGames.JAT
         [Tooltip("The type of hair this tool will cut.")]
         public HairTypes hairTypeToCut;
 
+        [Range(0f, 1f)] [Tooltip("The percentage of hair to cut.  If the hair growth is less than this amount, it will all be cut.")]
+        public float percentageToCut = 0.25f;
+
         // The position the object was at when the drag started.
         Vector3 startPosition;
 
