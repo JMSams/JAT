@@ -8,11 +8,12 @@ TextureImporter:
     21300002: ear
     21300004: head
     21300006: jaw
-    21300008: eye
+    21300008: eye-holder
     21300010: eyebrow
     21300012: fill
     21300014: face-bits_7
     21300016: mouth
+    21300018: eyeball
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -145,12 +146,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eye
+      name: eye-holder
       rect:
         serializedVersion: 2
-        x: 74
-        y: 476
-        width: 237
+        x: 3
+        y: 429
+        width: 243
         height: 129
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -210,6 +211,20 @@ TextureImporter:
         height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: eyeball
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 432
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
