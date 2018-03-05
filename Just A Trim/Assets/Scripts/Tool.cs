@@ -20,11 +20,19 @@ namespace BJGames.JAT
 
         CanvasGroup group;
 
+		//brads animation variables
+		Animator m_Animator;
+		bool m_Tool;
+
         void Start()
         {
             group = GetComponent<CanvasGroup>();
 
             startPosition = transform.position;
+
+			//brads animation hook up code
+			m_Animator = gameObject.GetComponent<Animator>();
+			m_Tool = false;
         }
 
         public void OnBeginDrag(PointerEventData eventData)
@@ -40,6 +48,9 @@ namespace BJGames.JAT
             newPosition.z = startPosition.z;
 
             transform.position = newPosition;
+
+			//brads animation hook up code
+			m_Animator.SetBool("ToolPickedUp", true);
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -49,6 +60,10 @@ namespace BJGames.JAT
             transform.position = startPosition;
 
             group.blocksRaycasts = true;
+
+
+			//brads animation hook up code
+			m_Animator.SetBool("ToolPickedUp", false);
         }
     }
 }
