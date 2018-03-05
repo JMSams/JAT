@@ -4,7 +4,8 @@ timeCreated: 1519527985
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: body
+    21300000: neck
+    21300002: clothing
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -81,15 +82,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: body
+      name: neck
       rect:
         serializedVersion: 2
-        x: 65
-        y: 52
-        width: 846
-        height: 768
+        x: 5
+        y: 756
+        width: 234
+        height: 234
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clothing
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 693
+        width: 445
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
