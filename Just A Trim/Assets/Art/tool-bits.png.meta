@@ -6,9 +6,11 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: tool-tray
     21300002: electric-razor
-    21300004: razor
+    21300004: razor-knife
     21300006: scissors
     21300008: tweezers
+    21300010: razor-handle
+    21300012: razor-bit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -113,13 +115,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: razor
+      name: razor-knife
       rect:
         serializedVersion: 2
         x: 219
-        y: 470
-        width: 247
-        height: 553
+        y: 587
+        width: 90
+        height: 436
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,6 +152,34 @@ TextureImporter:
         height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: razor-handle
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 473
+        width: 120
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: razor-bit
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 470
+        width: 66
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
