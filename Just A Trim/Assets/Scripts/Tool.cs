@@ -50,7 +50,7 @@ namespace BJGames.JAT
             transform.position = newPosition;
 
 			//brads animation hook up code
-			m_Animator.SetBool("ToolPickedUp", true);
+			m_Animator.SetBool("RazorOpening", true);
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -63,7 +63,7 @@ namespace BJGames.JAT
 
 
 			//brads animation hook up code
-			m_Animator.SetBool("ToolPickedUp", false);
+			m_Animator.SetBool("RazorOpening", false);
         }
     }
 }
