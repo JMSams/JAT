@@ -1,0 +1,13 @@
+{
+"companyName": "The Hairy Indies",
+"productName": "Just A Trim",
+"dataUrl": "Just A Trim WebGL.data.unityweb",
+"asmCodeUrl": "Just A Trim WebGL.asm.code.unityweb",
+"asmMemoryUrl": "Just A Trim WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "Just A Trim WebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
