@@ -17,7 +17,6 @@ namespace BJGames.JAT
 
         // The position the object was at when the drag started.
         Vector3 startPosition;
-
         CanvasGroup group;
 
 		//brads animation variables
@@ -51,6 +50,7 @@ namespace BJGames.JAT
 
 			//brads animation hook up code
 			m_Animator.SetBool("RazorOpening", true);
+            m_Animator.SetBool("ScissorsOpening", true);
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -64,6 +64,7 @@ namespace BJGames.JAT
 
 			//brads animation hook up code
 			m_Animator.SetBool("RazorOpening", false);
+            m_Animator.SetBool("ScissorsOpening", false);
         }
     }
 }
