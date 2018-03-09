@@ -8,6 +8,8 @@ namespace HairyIndies.JAT
     {
         Animator animator;
 
+        bool isGameOver = false;
+
         void Start()
         {
             animator = GetComponent<Animator>();
@@ -15,7 +17,11 @@ namespace HairyIndies.JAT
 
         public void GameOver()
         {
-            animator.SetTrigger("Open");
+            if (!isGameOver)
+            {
+                isGameOver = true;
+                animator.SetTrigger("Open");
+            }
         }
     }
 }
