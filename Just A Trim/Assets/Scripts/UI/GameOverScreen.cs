@@ -10,9 +10,18 @@ namespace HairyIndies.JAT
 
         bool isGameOver = false;
 
+		//CameraVariables
+		Animator m_Animator;
+		bool m_Camera;
+
         void Start()
         {
             animator = GetComponent<Animator>();
+
+
+			//Camera Animations
+			m_Animator = gameObject.GetComponent<Animator>();
+			m_Camera = false;
         }
 
         public void GameOver()
@@ -21,6 +30,10 @@ namespace HairyIndies.JAT
             {
                 isGameOver = true;
                 animator.SetTrigger("Open");
+
+
+				//
+				m_Animator.SetBool("RoundOver", true);
             }
         }
     }
