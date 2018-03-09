@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOverScreen : MonoBehaviour {
+namespace HairyIndies.JAT
+{
+    public class GameOverScreen : MonoBehaviour
+    {
+        Animator animator;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        void Start()
+        {
+            animator = GetComponent<Animator>();
+        }
+
+        public void GameOver()
+        {
+            animator.SetTrigger("Open");
+        }
+    }
 }

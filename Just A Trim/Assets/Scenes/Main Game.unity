@@ -727,9 +727,9 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 442072123}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!95 &442072129
 Animator:
@@ -1954,6 +1954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031426172}
   - component: {fileID: 2031426173}
+  - component: {fileID: 2031426174}
   m_Layer: 5
   m_Name: HairBar
   m_TagString: Untagged
@@ -2015,7 +2016,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 225192197}
   m_HandleRect: {fileID: 0}
@@ -2029,3 +2030,14 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2031426174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031426171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f566d2b3661764da50b837f0fd5f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

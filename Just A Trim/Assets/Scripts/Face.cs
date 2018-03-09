@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     public class Face : MonoBehaviour
     {

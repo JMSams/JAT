@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     public class CustomEditorList : ReorderableList
     {

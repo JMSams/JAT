@@ -4,64 +4,66 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     public class ProgressBar : MonoBehaviour
     {
-        Image background;
+        Slider slider;
 
-        Image bar;
-        RectTransform barTransform;
+        GameOverScreen gameOverScreen;
 
-        public bool showText = false;
-        TextMeshProUGUI text;
-        public string textPrefix = "Beard";
+        Dictionary<HairTypes, HairPiece> hairPieces;
 
-        float minValue = 0f;
-        public float maxValue = 100f;
+        int activeHairPieces
+        {
+            get
+            {
+                int i = 0;
+                foreach (HairPiece piece in hairPieces.Values)
+                    if (piece.isActive) i++;
+                return i;
+            }
+        }
 
-        float value = 0f;
-
-        Vector2 barOffsetMin, barOffsetMax;
+        void Awake()
+        {
+            hairPieces = new Dictionary<HairTypes, HairPiece>();
+        }
 
         void Start()
         {
-            background = GetComponent<Image>();
-            if (background == null)
-                Debug.LogError("Progress bar component requires an Image component on the same object!");
+            gameOverScreen = GameObject.FindObjectOfType<GameOverScreen>();
 
-            barTransform = transform.Find("BarContainer").Find("Bar") as RectTransform;
-            bar = barTransform.GetComponent<Image>();
-
-            barTransform.anchorMin = Vector2.zero;
-
-            Transform textTransform = transform.Find("Text");
-            if (showText)
-            {
-                text = textTransform.GetComponent<TextMeshProUGUI>();
-            }
-            else if (textTransform != null)
-            {
-                Destroy(textTransform.gameObject);
-            }
-            
-            UpdateProgress(0f);
+            slider = GetComponent<Slider>();
+            slider.minValue = 0;
+            slider.maxValue = 1;
+            slider.value = 0;
+            slider.wholeNumbers = false;
         }
 
-        void UpdateProgress(float newValue)
+        void LateUpdate()
         {
-            if (newValue <= minValue) value = minValue;
-            else if (newValue >= maxValue) value = maxValue;
-            else value = newValue;
+            float total = 0f;
+            foreach (HairPiece piece in hairPieces.Values)
+                if (piece.isActive) total += piece.progress;
 
-            float percentage = value / maxValue;
+            slider.value = total / (activeHairPieces);
 
-            barTransform.anchorMax = new Vector2(percentage, 1f);
-
-            if (showText && text != null)
+            if (slider.value >= 1f)
             {
-                text.text = string.Format("{0}: {1:0}%", textPrefix, percentage * 100f);
+                gameOverScreen.GameOver();
             }
+        }
+
+        public void RegisterHair(HairPiece piece)
+        {
+            if (hairPieces.ContainsKey(piece.hairType) && hairPieces[piece.hairType] != piece)
+            {
+                Debug.LogError("Registering a hair piece of type " + piece.hairType + " when one is already registered!");
+                return;
+            }
+
+            hairPieces.Add(piece.hairType, piece);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     public class HairPiece : MonoBehaviour, IDropHandler
     {
@@ -37,11 +37,7 @@ namespace BJGames.JAT
                     _frameIndex = 0;
                     image.sprite = animationSprites[_frameIndex];
                 }
-                else if (value > frameCount)
-                {
-                    Debug.Log("GAME OVER (" + hairType + ")");
-                }
-                else
+                else if (value <= frameCount)
                 {
                     _frameIndex = value;
                     image.sprite = animationSprites[_frameIndex];
@@ -53,21 +49,37 @@ namespace BJGames.JAT
 
         float lastFrameTime;
 
-        bool running = false;
+        public bool isActive { get; protected set; }
+        
+        public float progress
+        {
+            get
+            {
+                Debug.Log(hairType + " frame count: " + frameCount);
+                return (currentFrameIndex + 1f) / (frameCount + 1f);
+            }
+        }
+
+        ProgressBar progressBar;
     
         void Start()
         {
+            isActive = false;
+
+            progressBar = GameObject.FindObjectOfType<ProgressBar>();
+            progressBar.RegisterHair(this);
+
             image = GetComponent<Image>() ?? gameObject.AddComponent<Image>();
             image.sprite = animationSprites[0];
         }
 
         void Update()
         {
-            if (!running)
+            if (!isActive)
             {
                 if (Time.time >= startTime)
                 {
-                    running = true;
+                    isActive = true;
                     lastFrameTime = Time.time;
                 }
             }
@@ -83,7 +95,7 @@ namespace BJGames.JAT
 
         public void OnDrop(PointerEventData eventData)
         {
-            if (!running)
+            if (!isActive)
             {
                 Debug.Log(hairType + " not ready for cutting...");
                 return;

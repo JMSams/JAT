@@ -1,4 +1,4 @@
-﻿namespace BJGames.JAT
+﻿namespace HairyIndies.JAT
 {
     public enum HairTypes
     {

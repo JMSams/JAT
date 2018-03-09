@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     [CustomEditor(typeof(Face))]
     public class FaceEditor : Editor

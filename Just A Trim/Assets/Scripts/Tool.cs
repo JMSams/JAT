@@ -4,7 +4,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace BJGames.JAT
+namespace HairyIndies.JAT
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class Tool : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
