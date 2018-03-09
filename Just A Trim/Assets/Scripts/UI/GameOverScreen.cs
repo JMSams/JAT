@@ -32,7 +32,7 @@ namespace HairyIndies.JAT
                 animator.SetTrigger("Open");
 
 
-				//
+				//moves camera back to the next customer zone
 				m_Animator.SetBool("RoundOver", true);
             }
         }
