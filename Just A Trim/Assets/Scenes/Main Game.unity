@@ -1518,6 +1518,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224339932380379304, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b, type: 2}
   m_IsPrefabParent: 0
@@ -1837,6 +1842,11 @@ Prefab:
     - target: {fileID: 1880971525271122, guid: 53d5829264a0a86499d5edb60c4b6809, type: 2}
       propertyPath: m_Name
       value: Dude
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000185235111596, guid: 53d5829264a0a86499d5edb60c4b6809,
+        type: 2}
+      propertyPath: timeToMaxGrowth
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53d5829264a0a86499d5edb60c4b6809, type: 2}
