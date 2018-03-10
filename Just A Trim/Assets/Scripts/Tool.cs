@@ -37,7 +37,6 @@ namespace HairyIndies.JAT
         public void OnBeginDrag(PointerEventData eventData)
         {
             Debug.Log("Started dragging " + this.name);
-
             group.blocksRaycasts = false;
         }
 
@@ -48,9 +47,11 @@ namespace HairyIndies.JAT
 
             transform.position = newPosition;
 
-			//brads animation hook up code
+			//Tool picked up animations
 			m_Animator.SetBool("RazorOpening", true);
             m_Animator.SetBool("ScissorsOpening", true);
+			m_Animator.SetBool("ClippersOpening", true);
+			m_Animator.SetBool("TweezersOpening", true);
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -61,10 +62,11 @@ namespace HairyIndies.JAT
 
             group.blocksRaycasts = true;
 
-
-			//brads animation hook up code
+			//Tool inactive animations
 			m_Animator.SetBool("RazorOpening", false);
             m_Animator.SetBool("ScissorsOpening", false);
+			m_Animator.SetBool("ClippersOpening", false);
+			m_Animator.SetBool("TweezersOpening", false);
         }
     }
 }
