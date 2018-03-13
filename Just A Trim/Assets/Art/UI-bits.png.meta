@@ -9,6 +9,10 @@ TextureImporter:
     21300004: circle
     21300006: triangle
     21300008: square-rounded
+    21300010: hair-bar-holder-outline
+    21300012: hair-bar-fill
+    21300014: hair-bar-end
+    21300016: hair-bar-holder-background
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -88,10 +92,10 @@ TextureImporter:
       name: jamie-portrait
       rect:
         serializedVersion: 2
-        x: 20
-        y: 593
-        width: 392
-        height: 431
+        x: 353
+        y: 673
+        width: 348
+        height: 348
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,10 +106,10 @@ TextureImporter:
       name: brad-portrait
       rect:
         serializedVersion: 2
-        x: 465
-        y: 627
-        width: 367
-        height: 367
+        x: 3
+        y: 673
+        width: 348
+        height: 348
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,6 +154,62 @@ TextureImporter:
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hair-bar-holder-outline
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 438
+        width: 721
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hair-bar-fill
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 358
+        width: 619
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hair-bar-end
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 358
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hair-bar-holder-background
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 539
+        width: 699
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
