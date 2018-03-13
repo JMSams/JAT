@@ -6,9 +6,9 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: jamie-portrait
     21300002: brad-portrait
-    21300004: circle-shape
+    21300004: circle
     21300006: triangle
-    21300008: holder
+    21300008: square-rounded
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: circle-shape
+      name: circle
       rect:
         serializedVersion: 2
         x: 7
@@ -130,26 +130,26 @@ TextureImporter:
       name: triangle
       rect:
         serializedVersion: 2
-        x: 214
-        y: 9
-        width: 94
-        height: 91
+        x: 429
+        y: 16
+        width: 209
+        height: 183
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: holder
+      name: square-rounded
       rect:
         serializedVersion: 2
-        x: 317
+        x: 212
         y: 8
-        width: 233
-        height: 145
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
