@@ -35,9 +35,9 @@ namespace HairyIndies.JAT
             gameOverScreen = GameObject.FindObjectOfType<GameOverScreen>();
 
             slider = GetComponent<Slider>();
-            slider.minValue = 0;
-            slider.maxValue = 1;
-            slider.value = 0;
+            slider.minValue = 0f;
+            slider.maxValue = 0.9f;
+            slider.value = 0f;
             slider.wholeNumbers = false;
         }
 
@@ -49,7 +49,7 @@ namespace HairyIndies.JAT
 
             slider.value = total / (activeHairPieces);
 
-            if (slider.value >= 1f)
+            if (slider.value >= 0.9f)
             {
                 gameOverScreen.GameOver();
             }

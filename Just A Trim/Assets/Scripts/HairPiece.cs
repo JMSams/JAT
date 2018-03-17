@@ -56,7 +56,15 @@ namespace HairyIndies.JAT
             get
             {
                 Debug.Log(hairType + " frame count: " + frameCount);
-                return (currentFrameIndex + 1f) / (frameCount + 1f);
+                return (currentFrameIndex + 1f + frameProgress) / (frameCount + 1f);
+            }
+        }
+
+        public float frameProgress
+        {
+            get
+            {
+                return (Time.time - lastFrameTime) / timeBetweenFrames;
             }
         }
 
