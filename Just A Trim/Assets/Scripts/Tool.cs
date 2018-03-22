@@ -58,15 +58,19 @@ namespace HairyIndies.JAT
         {
             Debug.Log("Stopped dragging " + this.name);
             
-            transform.position = startPosition;
-
-            group.blocksRaycasts = true;
-
 			//Tool inactive animations
 			m_Animator.SetBool("RazorOpening", false);
             m_Animator.SetBool("ScissorsOpening", false);
 			m_Animator.SetBool("ClippersOpening", false);
 			m_Animator.SetBool("TweezersOpening", false);
+        }
+
+        // Should be called from an animation event on the last frame of the animation
+        public void DropAnimationFinished()
+        {
+            transform.position = startPosition;
+
+            group.blocksRaycasts = true;
         }
     }
 }
