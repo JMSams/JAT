@@ -3,7 +3,8 @@ guid: 3842a7c7730d020488fcbe2b9c79c934
 timeCreated: 1520638385
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: foot-encounter-bits_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -88,7 +89,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: foot-encounter-bits_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 252
+        width: 384
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

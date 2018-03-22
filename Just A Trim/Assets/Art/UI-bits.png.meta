@@ -13,6 +13,7 @@ TextureImporter:
     21300012: hair-bar-fill
     21300014: hair-bar-end
     21300016: hair-bar-holder-background
+    21300018: settings-btn
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -208,6 +209,20 @@ TextureImporter:
         y: 539
         width: 699
         height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: settings-btn
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 4
+        width: 211
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

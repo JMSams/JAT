@@ -134,10 +134,10 @@ TextureImporter:
       name: tweezers
       rect:
         serializedVersion: 2
-        x: 932
-        y: 609
-        width: 75
-        height: 401
+        x: 912
+        y: 354
+        width: 112
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,12 +190,12 @@ TextureImporter:
       name: bolt
       rect:
         serializedVersion: 2
-        x: 662
-        y: 641
+        x: 622
+        y: 361
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
