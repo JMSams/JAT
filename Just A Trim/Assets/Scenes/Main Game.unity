@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.94117653, g: 0.3372549, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -507,14 +507,14 @@ RectTransform:
   m_GameObject: {fileID: 144927392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99968, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.7624999, z: 1}
   m_Children: []
   m_Father: {fileID: 1893598651}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -1222.7}
+  m_AnchoredPosition: {x: -16, y: -1113}
   m_SizeDelta: {x: 2107, y: 2115.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &144927394
@@ -772,9 +772,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2250c33c835971d48923fe34cdf33882, type: 2}
-  m_sharedMaterial: {fileID: 21611685307201676, guid: 2250c33c835971d48923fe34cdf33882,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1761,7 +1760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &457551115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2593,8 +2592,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairType: 0
-  timeToMaxGrowth: 7
-  startTime: 5
+  timeToMaxGrowth: 20
+  startTime: 15
   animationSprites:
   - {fileID: 21300000, guid: 76fc7d9dddba75a4582062ee1fa22fac, type: 3}
   - {fileID: 21300002, guid: 76fc7d9dddba75a4582062ee1fa22fac, type: 3}
@@ -2667,7 +2666,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: eaaaf88c5f3ec084aa769c190c02c2d8, type: 3}
     m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
@@ -2781,7 +2780,7 @@ RectTransform:
   m_GameObject: {fileID: 1215538896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.84435505, y: 0.8443546, z: 0.8443546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1116924003}
   m_Father: {fileID: 2031426172}
@@ -2789,7 +2788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -696, y: 84}
+  m_AnchoredPosition: {x: -661, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1263223256
@@ -3118,7 +3117,19 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114141496754691094, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f500e131dbd55b84daf4010d7be00cc2,
+        type: 3}
+    - target: {fileID: 114141496754691094, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114141496754691094, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1357580734
@@ -3326,7 +3337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairType: 1
-  timeToMaxGrowth: 7
+  timeToMaxGrowth: 20
   startTime: 0
   animationSprites:
   - {fileID: 21300000, guid: 1285cd68a82261d4183984827460e3a4, type: 3}
@@ -4515,6 +4526,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &2048137810 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1706463675802222, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336792786}
+--- !u!225 &2048137811
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048137810}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2049170057
 GameObject:
   m_ObjectHideFlags: 0
