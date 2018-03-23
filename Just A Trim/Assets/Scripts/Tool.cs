@@ -69,7 +69,6 @@ namespace HairyIndies.JAT
         public void DropAnimationFinished()
         {
             transform.position = startPosition;
-
             group.blocksRaycasts = true;
         }
     }
