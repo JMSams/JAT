@@ -14,6 +14,7 @@ TextureImporter:
     21300014: face-bits_7
     21300016: mouth
     21300018: eyeball
+    21300020: spot
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -225,6 +226,20 @@ TextureImporter:
         height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spot
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 396
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
