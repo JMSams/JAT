@@ -1110,7 +1110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a57971d8718fcd47a8bc02d97944107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0
+  offset: 180
+  moveSpeed: 1
 --- !u!1 &234746625 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1666665345273760, guid: db9d3dcaf1cd5f44abb4dc4c0ff2e48b,
@@ -1632,7 +1633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a57971d8718fcd47a8bc02d97944107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0
+  offset: 180
+  moveSpeed: 1
 --- !u!1 &441173889
 GameObject:
   m_ObjectHideFlags: 0
