@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace HairyIndies.JAT
 {
@@ -23,6 +24,10 @@ namespace HairyIndies.JAT
 		Animator m_Animator;
 		bool m_Tool;
 
+
+		public Text HairScore;
+		private int score;
+
         void Start()
         {
             group = GetComponent<CanvasGroup>();
@@ -32,12 +37,16 @@ namespace HairyIndies.JAT
 			//brads animation hook up code
 			m_Animator = gameObject.GetComponent<Animator>();
 			m_Tool = false;
+
+			HairScore.text = "";
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
             Debug.Log("Started dragging " + this.name);
             group.blocksRaycasts = false;
+
+			HairScore.text = "" + score;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -70,6 +79,9 @@ namespace HairyIndies.JAT
         {
             transform.position = startPosition;
             group.blocksRaycasts = true;
+
+			//ScoreSystem
+			score = score + 9;
         }
     }
 }

@@ -10,8 +10,10 @@ namespace HairyIndies.JAT
     {
         Slider slider;
 
-        GameOverScreen gameOverScreen;
+		public Text HairScore;
+		private int score;
 
+        GameOverScreen gameOverScreen;
         Dictionary<HairTypes, HairPiece> hairPieces;
 
         int activeHairPieces
@@ -39,6 +41,9 @@ namespace HairyIndies.JAT
             slider.maxValue = 0.9f;
             slider.value = 0f;
             slider.wholeNumbers = false;
+
+			//ScoreSystem
+			HairScore.text = "";
         }
 
         void LateUpdate()
@@ -53,6 +58,10 @@ namespace HairyIndies.JAT
             {
                 gameOverScreen.GameOver();
             }
+
+			//ScoreSystem
+			HairScore.text = "" + score;
+			//score = score + 9;
         }
 
         public void RegisterHair(HairPiece piece)
@@ -62,7 +71,6 @@ namespace HairyIndies.JAT
                 Debug.LogError("Registering a hair piece of type " + piece.hairType + " when one is already registered!");
                 return;
             }
-
             hairPieces.Add(piece.hairType, piece);
         }
     }
