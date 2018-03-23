@@ -13,6 +13,7 @@ TextureImporter:
     21300012: razor-bit
     21300014: scissors-main
     21300016: bolt
+    21300018: tool-bits_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -182,6 +183,20 @@ TextureImporter:
         height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tool-bits_0
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 188
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
