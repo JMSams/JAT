@@ -20,13 +20,9 @@ namespace HairyIndies.JAT
         Vector3 startPosition;
         CanvasGroup group;
 
-		//brads animation variables
+		//Tool Animation variables
 		Animator m_Animator;
 		bool m_Tool;
-
-
-		public Text HairScore;
-		private int score;
 
         void Start()
         {
@@ -34,11 +30,9 @@ namespace HairyIndies.JAT
 
             startPosition = transform.position;
 
-			//brads animation hook up code
+			//Tool animation hook up
 			m_Animator = gameObject.GetComponent<Animator>();
 			m_Tool = false;
-
-			HairScore.text = "";
         }
 
         public void OnBeginDrag(PointerEventData eventData)
@@ -74,7 +68,7 @@ namespace HairyIndies.JAT
 			m_Animator.SetBool("TweezersOpening", false);
         }
 
-        // Should be called from an animation event on the last frame of the animation
+        //Should be called from an animation event on the last frame of the animation
         public void DropAnimationFinished()
         {
             transform.position = startPosition;
