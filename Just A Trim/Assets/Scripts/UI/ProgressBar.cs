@@ -10,8 +10,8 @@ namespace HairyIndies.JAT
     {
         Slider slider;
 
-		public Text HairScore;
-		private int score;
+		//public Text HairScore;
+		//private int score;
 
         GameOverScreen gameOverScreen;
         Dictionary<HairTypes, HairPiece> hairPieces;
@@ -43,7 +43,7 @@ namespace HairyIndies.JAT
             slider.wholeNumbers = false;
 
 			//ScoreSystem
-			HairScore.text = "";
+			//HairScore.text = "";
         }
 
         void LateUpdate()
@@ -60,7 +60,7 @@ namespace HairyIndies.JAT
             }
 
 			//ScoreSystem
-			HairScore.text = "" + score;
+			//HairScore.text = "" + score;
 			//score = score + 9;
         }
 
