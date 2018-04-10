@@ -15,12 +15,6 @@ namespace HairyIndies.JAT
 
         [Range(0f, 1f)] [Tooltip("The percentage of hair to cut.  If the hair growth is less than this amount, it will all be cut.")]
         public float percentageToCut = 0.25f;
-
-        [Tooltip("The score manager to add points to.")]
-        public ScoreManager scoreManager;
-
-        [Tooltip("The number of points added for each cut.")]
-        public int pointsPerCut = 9;
         
         // The position the object was at when the drag started.
         Vector3 startPosition;
@@ -77,9 +71,6 @@ namespace HairyIndies.JAT
         {
             transform.position = startPosition;
             group.blocksRaycasts = true;
-
-			//ScoreSystem
-			scoreManager.score += pointsPerCut;
         }
     }
 }

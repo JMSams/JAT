@@ -2005,6 +2005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairType: 0
+  scoreManager: {fileID: 0}
+  pointsPerCut: 9
   timeToMaxGrowth: 20
   startTime: 0
   animationSprites:
@@ -2763,6 +2765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairType: 0
+  scoreManager: {fileID: 1162179396}
+  pointsPerCut: 7
   timeToMaxGrowth: 20
   startTime: 15
   animationSprites:
@@ -4224,6 +4228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairType: 1
+  scoreManager: {fileID: 1162179396}
+  pointsPerCut: 5
   timeToMaxGrowth: 20
   startTime: 0
   animationSprites:

@@ -11,6 +11,12 @@ namespace HairyIndies.JAT
     {
         public HairTypes hairType;
 
+        [Tooltip("The score manager to add points to.")]
+        public ScoreManager scoreManager;
+
+        [Tooltip("The number of points added for each cut.")]
+        public int pointsPerCut = 9;
+
         [Tooltip("The time between this hair starting to grow and it reaching maximum length.")]
         public float timeToMaxGrowth = 20f;
 
@@ -55,7 +61,6 @@ namespace HairyIndies.JAT
         {
             get
             {
-                Debug.Log(hairType + " frame count: " + frameCount);
                 return (currentFrameIndex + 1f + frameProgress) / (frameCount + 1f);
             }
         }
@@ -127,6 +132,7 @@ namespace HairyIndies.JAT
             int framesToCut = Mathf.RoundToInt(frameCount * droppedTool.percentageToCut);
             currentFrameIndex -= framesToCut;
             lastFrameTime = Time.time;
+            scoreManager.score += pointsPerCut;
         }
     }
 }
